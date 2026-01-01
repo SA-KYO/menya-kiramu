@@ -1000,7 +1000,7 @@ function SignatureGallerySection() {
         "清湯スープに自家製具材を全部のせ。希楽夢の「全部のせ」王道の一杯です。迷ったときはまずはこちらをどうぞ。",
       note: "01 / 03",
       mainImage: IMAGES.gallery[0],
-      accentLabel: "おすすめ",
+      accentLabel: "本日のおすすめ",
       accentText: "特製希楽夢そば",
     },
     {
@@ -1011,7 +1011,7 @@ function SignatureGallerySection() {
         "炭火で焼き上げた香ばしいチャーシューを贅沢にのせた一杯。自家製ダレと卵黄が絡み合う、〆にもぴったりのごちそう丼です。",
       note: "02 / 03",
       mainImage: IMAGES.gallery[1],
-      accentLabel: "おすすめ",
+      accentLabel: "本日のおすすめ",
       accentText: "炭火チャーシュー丼",
     },
     {
@@ -1022,7 +1022,7 @@ function SignatureGallerySection() {
         "魚介と動物系をバランス良く合わせた濃厚スープに、コシのある太麺を絡めて楽しむ一杯。がっつり食べたい夜にどうぞ。",
       note: "03 / 03",
       mainImage: IMAGES.gallery[2],
-      accentLabel: "限定メニュー",
+      accentLabel: "夜の人気メニュー",
       accentText: "濃厚つけそば",
     },
   ]
