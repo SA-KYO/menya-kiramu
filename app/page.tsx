@@ -9,15 +9,15 @@ gsap.registerPlugin(ScrollTrigger)
 
 const IMAGES = {
   mainVisual: "/images/toukalogo.png",
-  ramenBowl: "/images/特製塩らーめん.jpeg",
+  ramenBowl: "/images/tokusio.jpeg",
   chashu: "/images/チャーシュー丼.jpeg",
   beer: "/images/外観.png",
-  menu1: "/images/toku-sio.jpeg",
-  menu2: "/images/メニュー２.jpg",
+  menu1: "/images/tokusio.jpeg",
+  menu2: "/images/メニュー２.JPG",
   menu3: "/images/塩らーめん.jpeg",
   menu4: "/images/醤油らーめん.jpg",
   menu5: "/images/白湯らーめん.jpeg",
-  menu6: "/images/toku-sio.jpeg",
+  menu6: "/images/tokusio.jpeg",
   noodle: "/images/麺.jpeg",
   soup: "/images/汁.jpeg",
   meat: "/images/肉.jpeg",
@@ -32,15 +32,15 @@ const IMAGES = {
   noren: "/images/のれん.jpeg",
   // ギャラリー用の画像
   gallery: [
-    "/images/特製塩らーめん.jpeg",
+    "/images/tokusio.jpeg",
     "/images/チャーシュー丼.jpeg",
     "/images/塩らーめん.jpeg",
     "/images/醤油らーめん.jpg",
-    "/images/醤油らーめん_copy.jpg",
+    "/images/醤油らーめん.jpg",
     "/images/白湯らーめん.jpeg",
-    "/images/白湯らーめん_copy.jpeg",
-    "/images/特製塩らーめん_copy.jpeg",
-    "/images/チャーシュー丼_copy.jpeg",
+    "/images/白湯らーめん.jpeg",
+    "/images/tokusio.jpeg",
+    "/images/チャーシュー丼.jpeg",
     "/images/店内.jpeg",
     "/images/外観.png",
     "/images/自家製麺.jpeg",
@@ -1325,7 +1325,7 @@ function RecruitSection() {
             IMAGES.interior,
             "/images/リサイズ後.png",
             "/images/外観.png",
-            "/images/メニュー１.jpg",
+            "/images/メニュー１.JPG",
           ].map((src, i) => (
             <motion.div
               key={i}
