@@ -441,7 +441,8 @@ export default function KiramuPageClient() {
                   className="w-full h-full border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.227909421623!2d135.869806!3d34.849922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001129c3a1d1fbf%3A0xXXXXXXXXXXXXXXX!2z5qCq55S65L2P44G-!5e0!3m2!1sja!2sjp!4v1700000000000"
+                  src="https://www.google.com/maps?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E7%B6%B4%E5%96%9C%E9%83%A1%E5%AE%87%E6%B2%BB%E7%94%B0%E5%8E%9F%E7%94%BA%E5%8D%97%E4%BA%A5%E5%AD%9090-1&output=embed"
+                  allowFullScreen
                 />
               </div>
             </div>
