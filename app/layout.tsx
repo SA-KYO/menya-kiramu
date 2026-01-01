@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Noto_Serif_JP, Zen_Kaku_Gothic_New } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const notoSerif = Noto_Serif_JP({
