@@ -1022,7 +1022,7 @@ function SignatureGallerySection() {
         "魚介と動物系をバランス良く合わせた濃厚スープに、コシのある太麺を絡めて楽しむ一杯。がっつり食べたい夜にどうぞ。",
       note: "03 / 03",
       mainImage: IMAGES.gallery[2],
-      accentLabel: "夜の人気メニュー",
+      accentLabel: "限定メニュー",
       accentText: "濃厚つけそば",
     },
   ]
