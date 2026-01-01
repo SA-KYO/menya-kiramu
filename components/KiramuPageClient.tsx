@@ -7,7 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
-
 const IMAGES = {
   mainVisual: "/images/toukalogo.png",
   ramenBowl: "/images/tokusio.jpeg",
