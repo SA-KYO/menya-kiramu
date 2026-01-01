@@ -31,7 +31,6 @@ export default function RootLayout({
     <html lang="ja">
       <body className={`${zenKaku.variable} ${notoSerif.variable} font-sans antialiased`}>
         {children}
-        <Analytics />
       </body>
     </html>
   )
