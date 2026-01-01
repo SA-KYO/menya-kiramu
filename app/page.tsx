@@ -12,7 +12,7 @@ const IMAGES = {
   ramenBowl: "/images/特製塩らーめん.jpeg",
   chashu: "/images/チャーシュー丼.jpeg",
   beer: "/images/外観.png",
-  menu1: "/images/メニュー１.jpg",
+  menu1: "/images/toku-sio.jpeg",
   menu2: "/images/メニュー２.jpg",
   menu3: "/images/塩らーめん.jpeg",
   menu4: "/images/醤油らーめん.jpg",
