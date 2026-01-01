@@ -1239,11 +1239,11 @@ function RecruitSection() {
         <div className="flex justify-center gap-4 mb-12 flex-wrap">
           {[
             IMAGES.noren,
-            "/images/自家製麺.jpeg",
+            "/images/jikaseimen.jpeg",
             IMAGES.interior,
-            "/images/リサイズ後.png",
-            "/images/外観.png",
-            "/images/メニュー１.JPG",
+            "/images/tenpogaikan.png",
+            "/images/tenpogaikan.png",
+            "/images/noren.jpeg",
           ].map((src, i) => (
             <motion.div
               key={i}
