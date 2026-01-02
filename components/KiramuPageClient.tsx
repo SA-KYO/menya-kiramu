@@ -998,7 +998,7 @@ function SignatureGallerySection() {
     {
       badge: "いちばん人気",
       tag: "SIGNATURE BOWLS",
-      title: "特製希楽夢そば",
+      title: "塩らーめん",
       description:
         "清湯スープに自家製具材を全部のせ。希楽夢の「全部のせ」王道の一杯です。迷ったときはまずはこちらをどうぞ。",
       note: "01 / 03",
