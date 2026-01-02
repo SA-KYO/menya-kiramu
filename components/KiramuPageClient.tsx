@@ -1189,47 +1189,7 @@ function PhotoGallerySection() {
             </motion.div>
           ))}
         </div>
-      </div>
-
-        <div className="bg-white border-4 border-black p-6 mt-6" style={{ boxShadow: '4px 4px 0 0 #000' }}>
-                <div className="text-center">
-                  <p className="text-xl font-black text-black mb-4">
-                    インスタグラムはこちら！
-                  </p>
-                  <a
-                    href="https://www.instagram.com/menya.kiramu/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 px-8 py-4 border-4 border-black text-white text-lg font-black uppercase hover:translate-x-1 hover:translate-y-1 transition-transform"
-                    style={{ boxShadow: '4px 4px 0 0 #000' }}
-                  >
-                    <Instagram className="w-6 h-6" />
-                    Instagram
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="bg-white border-4 border-black p-6 mt-6" style={{ boxShadow: '4px 4px 0 0 #000' }}>
-                <div className="text-center">
-                  <p className="text-xl font-black text-black mb-4">
-                    公式LINEはこちら！
-                  </p>
-                  <a
-                    href="https://line.me/R/ti/p/@091wotfr"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 px-8 py-4 border-4 border-black text-white text-lg font-black uppercase hover:translate-x-1 hover:translate-y-1 transition-transform"
-                    style={{ backgroundColor: '#06C755', boxShadow: '4px 4px 0 0 #000' }}
-                  >
-                    <MessageCircle className="w-6 h-6" />
-                    LINE
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
-
-      
+      </div>      
     </section>
   )
 }
