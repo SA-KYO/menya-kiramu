@@ -32,7 +32,7 @@ const IMAGES = {
   interior: "/images/tennai.jpeg",
   noren: "/images/noren.jpeg",
   tokusio: "/images/tokusio.jpeg",
-  tokusyoyu: "/images/tokusyoyu.jpeg",
+  tokusyoyu: "/images/tokusyoyu.jpg",
   sio: "/images/sio.jpeg",
   syouyu: "/images/syouyu.jpg",
   paitan: "/images/paitan.jpeg",
