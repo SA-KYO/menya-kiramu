@@ -280,7 +280,7 @@ export default function KiramuPageClient() {
               className="text-3xl md:text-4xl font-bold leading-relaxed"
               style={{ fontFamily: "'Noto Serif JP', serif" }}
             >
-              結局、希楽夢
+              麺屋　希楽夢
             </p>
           </motion.div>
 
@@ -300,13 +300,13 @@ export default function KiramuPageClient() {
             </h3>
 
             <p className="text-gray-600 leading-loose">
-              麺屋 希楽夢(きらむ)は、無鉄砲グループで
+              麺屋 希楽夢(きらむ)は、有名ラーメン店で
               <br className="hidden md:block" />
               経験を積んだ店主が2017年に愛知で独立創業。
               <br className="hidden md:block" />
               2023年夏、故郷・京都府宇治田原町で移転オープン。
               <br className="hidden md:block" />
-              鶏スープとしじみ・魚介を掛け合わせたWスープ、
+              鶏スープとしじみ・魚介を掛け合わせた無化調Wスープ、
               <br className="hidden md:block" />
               全粒粉入りの自家製麺が織りなす至福の一杯。
               <br className="hidden md:block" />
