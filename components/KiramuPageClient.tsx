@@ -566,7 +566,7 @@ function MenuSection() {
       subtitle: "贅沢トッピングで味わう極上の一杯",
       description:
         "三種の醤油を独自ブレンドした芳醇な醤油スープに、贅沢なトッピングをプラス。バラチャーシュー2枚、肩ロース1枚、味玉、海苔2枚が入った特製仕様で、醤油の深い味わいを堪能できる一杯です。",
-      image: IMAGES.syouyu,
+      image: IMAGES.toku-syoyu,
       label: "特製トッピングで贅沢に",
       sideDish: null as string | null,
       badge: "人気",
