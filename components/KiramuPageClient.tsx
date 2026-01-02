@@ -41,7 +41,7 @@ const IMAGES = {
   gallery: [
     "/images/tantan.jpg",
     "/images/cha-syu-.jpeg",
-    "/images/sio.jpeg",
+    "/images/syouyutukemen.jpg",
     "/images/syouyu.jpg",
     "/images/paitan.jpeg",
     "/images/tennai.jpeg",
