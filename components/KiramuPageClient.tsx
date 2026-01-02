@@ -1141,6 +1141,27 @@ function PhotoGallerySection() {
   return (
     <section id="gallery" className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-12"
+        >
+          <a
+            href="https://line.me/R/ti/p/@091wotfr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block max-w-4xl mx-auto hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/images/bana.png"
+              alt="LINE公式アカウント"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </a>
+        </motion.div>
+
         <div className="text-center mb-16">
           <p className="text-sm tracking-widest text-[#C41E3A] mb-4">GALLERY</p>
           <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "'Noto Serif JP', serif" }}>
