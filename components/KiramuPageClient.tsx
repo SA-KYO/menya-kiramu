@@ -1103,8 +1103,8 @@ function SignatureGallerySection() {
               </div>
 
               <div className="relative flex-shrink-0">
-                <div className="w-52 h-52 md:w-64 md:h-64 rounded-full bg-[#F5F0E8] flex items-center justify-center shadow-inner">
-                  <div className="w-44 h-44 md:w-56 md:h-56 rounded-full overflow-hidden border-8 border-[#F5F0E8] shadow-xl">
+                <div className="w-72 h-72 md:w-96 md:h-96 rounded-2xl bg-[#F5F0E8] flex items-center justify-center shadow-inner">
+                  <div className="w-64 h-64 md:w-[22rem] md:h-[22rem] rounded-xl overflow-hidden border-8 border-[#F5F0E8] shadow-xl">
                     <img src={active.mainImage} alt={active.title} className="w-full h-full object-cover" />
                   </div>
                 </div>
