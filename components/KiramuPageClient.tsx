@@ -254,9 +254,9 @@ export default function KiramuPageClient() {
           <div className="flex whitespace-nowrap animate-marquee">
             {[...Array(4)].map((_, i) => (
               <div key={i} className="flex items-center gap-8 mx-8">
-                <span className="text-sm tracking-widest">希楽夢の看板メニュー</span>
+                <span className="text-sm tracking-widest">全粒粉入り自家製麺</span>
                 <span className="w-1 h-1 bg-white rounded-full" />
-                <span className="text-sm tracking-widest">炭火焼きの技術が光る焼豚</span>
+                <span className="text-sm tracking-widest">魚貝×鶏の無化調Wスープ</span>
                 <span className="w-1 h-1 bg-white rounded-full" />
                 <span className="text-sm tracking-widest">国産小麦のこだわりワンタン</span>
                 <span className="w-1 h-1 bg-white rounded-full" />
