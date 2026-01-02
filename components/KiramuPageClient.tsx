@@ -1062,7 +1062,7 @@ function SignatureGallerySection() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % items.length)
-    }, 1000)
+    }, 10000)
     return () => clearInterval(timer)
   }, [items.length])
 
