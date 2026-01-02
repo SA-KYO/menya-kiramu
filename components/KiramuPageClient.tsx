@@ -1025,15 +1025,15 @@ function SignatureGallerySection() {
 
   const items = [
     {
-      badge: "いちばん人気",
+      badge: "限定メニュー",
       tag: "SIGNATURE BOWLS",
-      title: "塩らーめん",
+      title: "担々麺",
       description:
-        "清湯スープに自家製具材を全部のせ。希楽夢の「全部のせ」王道の一杯です。迷ったときはまずはこちらをどうぞ。",
+        "12月の金、土、日限定。スープはきらむ白湯のスープと魚介のダブルスープに担々麺用のタレを入れて香味油にラー油を使います。麺は平打ち麺、トッピングは旨辛ミンチ、肩ロース1枚、チンゲンサイです。",
       note: "01 / 03",
       mainImage: IMAGES.gallery[0],
-      accentLabel: "本日のおすすめ",
-      accentText: "特製希楽夢そば",
+      accentLabel: "￥1,150",
+      accentText: "担々麺",
     },
     {
       badge: "数量限定",
