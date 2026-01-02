@@ -1281,7 +1281,7 @@ function RecruitSection() {
         </motion.button>
 
         <p className="mt-12 text-[#5D4E37] leading-relaxed">
-          ラーメンが好き、おしゃれが好き、
+          ラーメンが好き、食べることが好き、
           <br />
           調理経験を積みたい、接客が好き、
           <br />
