@@ -1244,7 +1244,6 @@ function RecruitSection() {
             "/images/jikaseimen.jpeg",
             IMAGES.interior,
             "/images/tenpogaikan.png",
-            "/images/tenpogaikan.png",
             "/images/noren.jpeg",
           ].map((src, i) => (
             <motion.div
