@@ -1022,6 +1022,7 @@ function CommitmentTabs({
 
 function SignatureGallerySection() {
   const [index, setIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
 
   const items = [
     {
@@ -1051,7 +1052,7 @@ function SignatureGallerySection() {
       tag: "SIGNATURE BOWLS",
       title: "醤油つけ麺　(1,100円)",
       description:
-        "香り立つ自家製醤油ダレが決め手。数種の醤油を重ねた奥行きあるつけ汁に、魚介と鶏の旨味を丁寧に合わせ、ひと口目から“醤油の立ち上がり”とコクが広がります。北海道産小麦を使った自家製麺は、つけ汁をしっかり抱える程よいコシと喉ごし。〆はスープ割りで、香りと余韻まで楽しんで。",
+        "香り立つ自家製醤油ダレが決め手。数種の醤油を重ねた奥行きあるつけ汁に、魚介と鶏の旨味を丁寧に合わせ、ひと口目から\"醤油の立ち上がり\"とコクが広がります。北海道産小麦を使った自家製麺は、つけ汁をしっかり抱える程よいコシと喉ごし。〆はスープ割りで、香りと余韻まで楽しんで。",
       note: "03 / 03",
       mainImage: IMAGES.gallery[2],
       accentLabel: "￥1,100",
@@ -1060,11 +1061,31 @@ function SignatureGallerySection() {
   ]
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % items.length)
-    }, 10000)
-    return () => clearInterval(timer)
-  }, [items.length])
+    if (!isPaused) {
+      const timer = setInterval(() => {
+        setIndex((prev) => (prev + 1) % items.length)
+      }, 10000)
+      return () => clearInterval(timer)
+    }
+  }, [items.length, isPaused])
+
+  const handlePrev = () => {
+    setIsPaused(true)
+    setIndex((prev) => (prev - 1 + items.length) % items.length)
+    setTimeout(() => setIsPaused(false), 15000)
+  }
+
+  const handleNext = () => {
+    setIsPaused(true)
+    setIndex((prev) => (prev + 1) % items.length)
+    setTimeout(() => setIsPaused(false), 15000)
+  }
+
+  const handleDotClick = (i: number) => {
+    setIsPaused(true)
+    setIndex(i)
+    setTimeout(() => setIsPaused(false), 15000)
+  }
 
   const active = items[index]
 
@@ -1075,15 +1096,46 @@ function SignatureGallerySection() {
           スライドで希楽夢の人気メニューがくるくる回る、ラーメンギャラリーです。
         </p>
 
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={active.title}
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -24 }}
-            transition={{ duration: 0.4 }}
-            className="relative bg-white rounded-[32px] shadow-lg px-6 py-8 md:px-10 md:py-10 overflow-hidden"
+        <div className="relative">
+          <button
+            onClick={handlePrev}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
+            aria-label="前へ"
           >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-[#C41E3A]">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+
+          <button
+            onClick={handleNext}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-8 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
+            aria-label="次へ"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-[#C41E3A]">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={active.title}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.4 }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.2}
+              onDragEnd={(e, { offset, velocity }) => {
+                if (offset.x > 100 || velocity.x > 500) {
+                  handlePrev()
+                } else if (offset.x < -100 || velocity.x < -500) {
+                  handleNext()
+                }
+              }}
+              className="relative bg-white rounded-[32px] shadow-lg px-6 py-8 md:px-10 md:py-10 overflow-hidden cursor-grab active:cursor-grabbing"
+            >
             <div className="absolute left-6 top-4">
               <span className="inline-flex items-center px-4 py-1 rounded-full bg-[#FF6F91] text-white text-xs">
                 {active.badge}
@@ -1131,7 +1183,7 @@ function SignatureGallerySection() {
                 {items.map((_, i) => (
                   <button
                     key={i}
-                    onClick={() => setIndex(i)}
+                    onClick={() => handleDotClick(i)}
                     className={`w-2 h-2 rounded-full transition-colors ${
                       i === index ? "bg-[#C41E3A]" : "bg-gray-300"
                     }`}
@@ -1143,6 +1195,7 @@ function SignatureGallerySection() {
             </div>
           </motion.div>
         </AnimatePresence>
+        </div>
 
         <p className="mt-6 text-xs tracking-[.25em] text-gray-500">KIRAMU CLASSIC</p>
       </div>
