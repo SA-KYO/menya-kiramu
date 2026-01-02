@@ -1036,26 +1036,26 @@ function SignatureGallerySection() {
       accentText: "担々麺",
     },
     {
-      badge: "数量限定",
+      badge: "らーめんのお供に",
       tag: "SIGNATURE BOWLS",
-      title: "炭火チャーシュー丼",
+      title: "チャーシュー丼　(500円)",
       description:
-        "炭火で焼き上げた香ばしいチャーシューを贅沢にのせた一杯。自家製ダレと卵黄が絡み合う、〆にもぴったりのごちそう丼です。",
+        "チャーシューを贅沢にのせた一杯。肉の旨味をしっかり感じられるチャーシューに自家製ダレと卵黄が絡み合う、〆にもぴったりのごちそう丼です。",
       note: "02 / 03",
       mainImage: IMAGES.gallery[1],
-      accentLabel: "本日のおすすめ",
-      accentText: "炭火チャーシュー丼",
+      accentLabel: "￥500",
+      accentText: "チャーシュー丼",
     },
     {
-      badge: "夜限定",
+      badge: "平日限定",
       tag: "SIGNATURE BOWLS",
-      title: "濃厚つけそば",
+      title: "醤油つけ麺",
       description:
-        "魚介と動物系をバランス良く合わせた濃厚スープに、コシのある太麺を絡めて楽しむ一杯。がっつり食べたい夜にどうぞ。",
+        "香り立つ自家製醤油ダレが決め手。数種の醤油を重ねた奥行きあるつけ汁に、魚介と鶏の旨味を丁寧に合わせ、ひと口目から“醤油の立ち上がり”とコクが広がります。北海道産小麦を使った自家製麺は、つけ汁をしっかり抱える程よいコシと喉ごし。〆はスープ割りで、香りと余韻まで楽しんで。",
       note: "03 / 03",
       mainImage: IMAGES.gallery[2],
-      accentLabel: "限定メニュー",
-      accentText: "濃厚つけそば",
+      accentLabel: "￥1,100",
+      accentText: "醤油つけ麺",
     },
   ]
 
