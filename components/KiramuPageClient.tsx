@@ -294,9 +294,9 @@ export default function KiramuPageClient() {
               className="text-2xl md:text-3xl font-bold mb-8 leading-relaxed"
               style={{ fontFamily: "'Noto Serif JP', serif" }}
             >
-              澄みきった清湯スープ、自家製麺。
+              魚貝と鶏の旨味を重ねた、澄んだWスープ。
               <br />
-              京都・宇治田原で紡ぐ新たな一杯。
+              北海道産小麦100%の自家製麺。宇治田原で紡ぐ一杯。
             </h3>
 
             <p className="text-gray-600 leading-loose">
