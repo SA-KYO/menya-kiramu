@@ -296,7 +296,7 @@ export default function KiramuPageClient() {
             >
               魚貝と鶏の旨味を重ねた、澄んだWスープ。
               <br />
-              北海道産小麦100%の自家製麺。宇治田原で紡ぐ一杯。
+              北海道産小麦100%の自家製麺。
             </h3>
 
             <p className="text-gray-600 leading-loose">
