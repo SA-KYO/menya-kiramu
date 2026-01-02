@@ -328,11 +328,13 @@ export default function KiramuPageClient() {
       <section id="commitment" className="py-24 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            {/* <p className="text-sm tracking-widest text-[#C41E3A] mb-4">COMMITMENT</p> */}
+            <p className="text-sm tracking-widest text-[#C41E3A] mb-4">COMMITMENT</p>
             <p className="text-2xl" style={{ fontFamily: "'Noto Serif JP', serif" }}>
               こだわり
+            </p>
           </div>
 
+          
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
