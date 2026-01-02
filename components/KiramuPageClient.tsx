@@ -196,7 +196,7 @@ export default function KiramuPageClient() {
             opacity: 0.15,
           }}
         />
-        <div className="absolute inset-0 z-0 bg-[#F5E6D3]/70" />
+        <div className="absolute inset-0 z-0 bg-[#F5E6D3]/60" />
 
         <div className="absolute top-24 left-8 hidden md:block z-10" style={{ writingMode: "vertical-rl" }}>
           <motion.span
