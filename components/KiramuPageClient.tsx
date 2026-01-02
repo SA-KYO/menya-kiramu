@@ -294,7 +294,7 @@ export default function KiramuPageClient() {
               className="text-2xl md:text-3xl font-bold mb-8 leading-relaxed"
               style={{ fontFamily: "'Noto Serif JP', serif" }}
             >
-              魚貝と鶏の旨味を重ねた、澄んだWスープ。
+              魚貝と鶏の旨味を重ねた、Wスープ。
               <br />
               北海道産小麦100%の自家製麺。
             </h3>
