@@ -39,7 +39,7 @@ const IMAGES = {
   paitan: "/images/paitan.jpeg",
   calendar: "/images/eigyou-1.jpg",
   gallery: [
-    "/images/tokusio.jpeg",
+    "/images/tantan.jpg",
     "/images/cha-syu-.jpeg",
     "/images/sio.jpeg",
     "/images/syouyu.jpg",
