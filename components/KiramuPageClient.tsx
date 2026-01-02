@@ -36,6 +36,7 @@ const IMAGES = {
   sio: "/images/sio.jpeg",
   syouyu: "/images/syouyu.jpg",
   paitan: "/images/paitan.jpeg",
+  calendar: "/images/eigyou-1.jpg",
   gallery: [
     "/images/tokusio.jpeg",
     "/images/cha-syu-.jpeg",
@@ -366,6 +367,8 @@ export default function KiramuPageClient() {
       </div>
 
       <RecruitSection />
+
+      <CalendarSection />
 
       <section id="access" className="py-24 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -1290,6 +1293,35 @@ function RecruitSection() {
           <br />
           経験は問いません。
         </p>
+      </div>
+    </section>
+  )
+}
+
+function CalendarSection() {
+  return (
+    <section className="py-24 px-4 bg-white">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-16">
+          <p className="text-sm tracking-widest text-[#C41E3A] mb-4">CALENDAR</p>
+          <h3 className="text-2xl font-bold" style={{ fontFamily: "'Noto Serif JP', serif" }}>
+            営業日カレンダー
+          </h3>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-center"
+        >
+          <img
+            src={IMAGES.calendar}
+            alt="営業日カレンダー"
+            className="w-full max-w-2xl rounded-2xl shadow-lg"
+          />
+        </motion.div>
       </div>
     </section>
   )
