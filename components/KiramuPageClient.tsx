@@ -182,7 +182,7 @@ export default function KiramuPageClient() {
                 ))}
               </nav>
               <div className="p-8 text-center">
-                <p className="text-sm opacity-70">© 2025 らーめん希楽夢</p>
+                <p className="text-sm opacity-70">© 2026 麺屋 希楽夢</p>
               </div>
             </div>
           </motion.div>
@@ -461,7 +461,7 @@ export default function KiramuPageClient() {
           <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "'Noto Serif JP', serif" }}>
             希楽夢
           </h2>
-          <p className="text-sm text-gray-400 mb-8">Ramen KIRAMU</p>
+          <p className="text-sm text-gray-400 mb-8">MENYA KIRAMU</p>
 
           <div className="flex justify-center gap-6 mb-8">
             <a
@@ -488,7 +488,7 @@ export default function KiramuPageClient() {
             </a>
           </div>
 
-          <p className="text-sm text-gray-500">© 2025 らーめん希楽夢 All Rights Reserved.</p>
+          <p className="text-sm text-gray-500">© 2026 麺屋 希楽夢</p>
         </div>
       </footer>
 
