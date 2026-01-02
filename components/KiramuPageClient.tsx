@@ -1081,7 +1081,7 @@ function SignatureGallerySection() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -24 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 10 }}
             className="relative bg-white rounded-[32px] shadow-lg px-6 py-8 md:px-10 md:py-10 overflow-hidden"
           >
             <div className="absolute left-6 top-4">
