@@ -745,7 +745,7 @@ function MenuSection() {
 
                 <div className="flex-1 flex flex-col items-center justify-center px-8 pt-28 pb-6">
                   <div className="relative w-full max-w-sm mx-auto mb-6">
-                    <div className="absolute -top-4 -right-4 writing-vertical text-white font-bold text-6xl font-serif-jp opacity-30 z-0">
+                    <div className="absolute -top-16 -right-8 writing-vertical text-white font-bold text-6xl font-serif-jp opacity-35 z-0">
                       {item.title}
                     </div>
 
