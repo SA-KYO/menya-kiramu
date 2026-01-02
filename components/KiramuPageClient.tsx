@@ -781,8 +781,7 @@ function MenuSection() {
                       </div>
                       <h3 className="text-3xl md:text-4xl font-bold mb-2 font-serif-jp tracking-wide px-8">{item.title}</h3>
                     </div>
-                    <p className="text-lg font-bold">{item.price}</p>
-                    <p className="text-sm opacity-90 tracking-wide">{item.subtitle}</p>
+                    <p className="text-2xl md:text-3xl font-bold text-[#f5f1e8]">{item.price}</p>
                   </div>
                 </div>
 
