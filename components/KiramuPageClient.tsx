@@ -165,7 +165,7 @@ export default function KiramuPageClient() {
                   { id: "concept", label: "CONCEPT" },
                   { id: "menu", label: "MENU" },
                   { id: "gallery", label: "GALLERY" },
-                  { id: "commitment", label: "COMMITMENT" },
+                  { id: "commitment", label: "Materials & Methods" },
                   { id: "recruit", label: "RECRUIT" },
                   { id: "access", label: "ACCESS" },
                 ].map((item, i) => (
