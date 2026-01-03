@@ -1363,13 +1363,16 @@ function RecruitSection() {
 
         <p className="text-lg tracking-widest mb-8 text-[#5D4E37]">Good Times, Good People, Good Day.</p>
 
-        <motion.button
-          className="px-8 py-4 bg-[#3D3129] text-[#F5E6D3] rounded-full text-lg hover:bg-[#5D4E37] transition-colors"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          採用情報を見る
-        </motion.button>
+          <motion.a
+            href="https://kiramu-recruit.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 bg-[#3D3129] text-[#F5E6D3] rounded-full text-lg hover:bg-[#5D4E37] transition-colors"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            希楽夢に応募してみる！
+          </motion.a>
 
         <p className="mt-12 text-[#5D4E37] leading-relaxed">
           ラーメンが好き、食べることが好き、
