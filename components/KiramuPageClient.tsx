@@ -45,11 +45,12 @@ const IMAGES = {
     "/images/syouyu.jpg",
     "/images/paitan.jpeg",
     "/images/tennai.jpeg",
-
+    // "/images/tenpogaikan.png",
     "/images/jikaseimen.jpeg",
     "/images/noren.jpeg",
   ],
 }
+
 
 
 export default function KiramuPageClient() {
