@@ -658,17 +658,17 @@ function MenuSection() {
     {
       name: "ご飯 大",
       price: "¥200",
-      description: "山城町産のこだわり米",
+      description: "山城町産のこだわり米。（大）",
     },
     {
       name: "ご飯 中",
       price: "¥150",
-      description: "山城町産のこだわり米",
+      description: "山城町産のこだわり米。（中）",
     },
     {
       name: "ご飯 小",
       price: "¥100",
-      description: "山城町産のこだわり米",
+      description: "山城町産のこだわり米。（小）",
     },
   ]
 
