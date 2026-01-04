@@ -575,7 +575,7 @@ function MenuSection() {
       description:
         "澄んだ塩スープに自家製麺が絡む、当店自慢の塩らーめんに贅沢なトッピングをプラス。バラチャーシュー2枚、肩ロース1枚、味玉、海苔2枚が入った特製仕様で、素材の旨みを最大限に味わえる一杯です。",
       image: IMAGES.tokusio,
-      label: "特製トッピングで贅沢に",
+      label: "当店自慢の塩らーめんに贅沢なトッピングをプラス",
       sideDish: null as string | null,
       badge: "当店自慢",
       price: "¥1,400",
@@ -586,7 +586,7 @@ function MenuSection() {
       description:
         "三種の醤油を独自ブレンドした芳醇な醤油スープに、贅沢なトッピングをプラス。バラチャーシュー2枚、肩ロース1枚、味玉、海苔2枚が入った特製仕様で、醤油の深い味わいを堪能できる一杯です。",
       image: IMAGES.tokusyoyu,
-      label: "特製トッピングで贅沢に",
+      label: "芳醇な醤油スープに、贅沢なトッピングをプラス",
       sideDish: null as string | null,
       badge: "人気",
       price: "¥1,400",
