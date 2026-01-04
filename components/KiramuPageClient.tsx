@@ -571,7 +571,7 @@ function MenuSection() {
   const mainMenuItems = [
     {
       title: "特製塩らーめん",
-      subtitle: "贅沢トッピングで味わう極上の一杯",
+      subtitle: "当店自慢の塩らーめんに贅沢なトッピングをプラス",
       description:
         "澄んだ塩スープに自家製麺が絡む、当店自慢の塩らーめんに贅沢なトッピングをプラス。バラチャーシュー2枚、肩ロース1枚、味玉、海苔2枚が入った特製仕様で、素材の旨みを最大限に味わえる一杯です。",
       image: IMAGES.tokusio,
@@ -582,7 +582,7 @@ function MenuSection() {
     },
     {
       title: "特製醤油らーめん",
-      subtitle: "贅沢トッピングで味わう極上の一杯",
+      subtitle: "芳醇な醤油スープに、贅沢なトッピングをプラス",
       description:
         "三種の醤油を独自ブレンドした芳醇な醤油スープに、贅沢なトッピングをプラス。バラチャーシュー2枚、肩ロース1枚、味玉、海苔2枚が入った特製仕様で、醤油の深い味わいを堪能できる一杯です。",
       image: IMAGES.tokusyoyu,
