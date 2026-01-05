@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { Instagram, MessageCircle, ExternalLink } from "lucide-react"
+import { Instagram, MessageCircle, ExternalLink, Mail, ChevronRight } from "lucide-react"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -1103,13 +1103,13 @@ function SignatureGallerySection() {
   const active = items[index]
 
   return (
-    <section className="py-24 px-4 bg-[#F8D94B]">
+    <section className="py-24 px-4 bg-[#F5F0E8]">
       <div className="max-w-6xl mx-auto">
         <div className="relative">
           <div className="absolute inset-0 translate-x-3 translate-y-3 bg-black/70 rounded-sm" />
           <div className="relative bg-white border-4 border-black rounded-sm overflow-hidden shadow-[12px_12px_0_#000]">
-            <div className="absolute -top-4 right-10 w-14 h-14 bg-[#F8D94B] border-4 border-black rotate-6 hidden md:block" />
-            <div className="absolute top-10 -left-6 w-10 h-10 bg-[#F8D94B] border-4 border-black -rotate-6 hidden md:block" />
+            <div className="absolute -top-4 right-10 w-14 h-14 bg-[#f5f1e8] border-4 border-black rotate-6 hidden md:block" />
+            <div className="absolute top-10 -left-6 w-10 h-10 bg-[#f5f1e8] border-4 border-black -rotate-6 hidden md:block" />
 
             <AnimatePresence mode="wait">
               <motion.div
@@ -1192,7 +1192,7 @@ function SignatureGallerySection() {
                   </div>
                 </div>
 
-                <div className="p-8 md:p-12 bg-[#FFF5C7] flex items-center justify-center relative">
+                <div className="p-8 md:p-12 bg-[#f5f1e8] flex items-center justify-center relative">
                   <div className="relative w-full max-w-xl aspect-[4/3]">
                     <div className="absolute inset-0 translate-x-5 translate-y-5 bg-black rounded-sm" />
                     <div className="absolute inset-0 translate-x-10 translate-y-10 bg-white border-4 border-black rounded-sm" />
@@ -1374,11 +1374,13 @@ function RecruitSection() {
             href="https://kiramu-recruit.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-[#3D3129] text-[#F5E6D3] rounded-full text-lg hover:bg-[#5D4E37] transition-colors"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center gap-3 px-6 py-3 bg-[#FFE600] text-black border-[2.5px] border-black rounded-md shadow-[3px_3px_0_#000] text-base font-semibold tracking-wide hover:-translate-y-0.5 transition-transform"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.97 }}
           >
-            希楽夢に応募してみる！
+            <Mail className="w-5 h-5" />
+            PUSH
+            <ChevronRight className="w-5 h-5" />
           </motion.a>
 
         <p className="mt-12 text-[#5D4E37] leading-relaxed">
