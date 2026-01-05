@@ -1060,7 +1060,7 @@ function SignatureGallerySection() {
         "チャーシューを贅沢にのせた一杯。肉の旨味をしっかり感じられるチャーシューに自家製ダレと卵黄が絡み合う、〆にもぴったりのごちそう丼です。",
       note: "02 / 03",
       mainImage: IMAGES.gallery[1],
-      accentLabel: "￥500",
+      accentLabel: "￥600",
       accentText: "チャーシュー丼",
     },
     {
