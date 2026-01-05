@@ -614,7 +614,7 @@ function MenuSection() {
       price: "¥1,000",
     },
     {
-      title: "白湯らーめん",
+      title: "きらむ白湯らーめん",
       subtitle: "濃厚クリーミーな白湯スープの極み",
       description:
         "鶏白湯スープに煮干しを効かせた濃厚でクリーミーなスープが自慢。長時間じっくり炊き上げることで生まれる深いコクと旨みが口の中に広がります。濃厚ながらも後味はすっきり、何度でも食べたくなる一杯です。",
@@ -632,6 +632,11 @@ function MenuSection() {
       price: "¥400",
       description: "バラチャーシュー2枚、肩ロース1枚、味玉、のり2枚増し",
     },
+        {
+      name: "塩、醤油麺大盛り",
+      price: "¥150",
+      description: "自家製麺大盛り",
+    },
     {
       name: "味玉",
       price: "¥150",
@@ -647,35 +652,45 @@ function MenuSection() {
       price: "¥100",
       description: "香り高い海苔を2枚追加",
     },
+        {
+      name: "わんたん4個",
+      price: "¥250",
+      description: "自家製わんたん",
+    },
   ]
 
   const sideMenuItems = [
     {
       name: "チャーシュー丼",
-      price: "¥500",
+      price: "¥600",
       description: "自家製チャーシューをたっぷりのせた丼",
+    },
+        {
+      name: "チャーシュー丼ミニ",
+      price: "¥350",
+      description: "自家製チャーシューをたっぷりのせた丼(ミニサイズ)",
     },
     {
       name: "ご飯 大",
-      price: "¥200",
+      price: "¥390",
       description: "山城町産のこだわり米。（大）",
     },
     {
       name: "ご飯 中",
-      price: "¥150",
+      price: "¥260",
       description: "山城町産のこだわり米。（中）",
     },
     {
       name: "ご飯 小",
-      price: "¥100",
+      price: "¥130",
       description: "山城町産のこだわり米。（小）",
     },
   ]
 
   const drinkItems = [
     {
-      name: "ビンビール",
-      price: "¥650",
+      name: "ビンビール小瓶",
+      price: "¥500",
     },
     {
       name: "酎ハイ レモン",
