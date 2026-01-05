@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   generator: "v0.app",
 }
 
+  icons: {
+    apple: "/apple-icon.png",     // public/apple-icon.png
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
