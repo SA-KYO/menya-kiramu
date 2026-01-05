@@ -18,12 +18,13 @@ const zenKaku = Zen_Kaku_Gothic_New({
 export const metadata: Metadata = {
   title: "麺屋-希楽夢 | 宇治田原町 - 自家製麺と無化調のWスープ",
   description:
-  "麺屋 希楽夢 kiramu｜京都・宇治田原町のラーメン店。魚貝×鶏の無化調ダブルスープと北海道産小麦の自家製麺。塩・醤油・限定20食きらむ白湯、限定メニューも人気。",
+    "麺屋 希楽夢 kiramu｜京都・宇治田原町のラーメン店。魚貝×鶏の無化調ダブルスープと北海道産小麦の自家製麺。塩・醤油・限定20食きらむ白湯、限定メニューも人気。",
   generator: "v0.app",
-}
 
+  // ✅ ここが重要：metadataの中に icons を入れる
   icons: {
-    apple: "/apple-icon.png",     // public/apple-icon.png
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
 }
 
