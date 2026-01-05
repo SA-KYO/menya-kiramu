@@ -11,14 +11,14 @@ gsap.registerPlugin(ScrollTrigger)
 
 const IMAGES = {
   mainVisual: "/images/toukalogo.png",
-  ramenBowl: "/images/tokusio.jpeg",
+  ramenBowl: "/images/tokusio.jpg",
   chashu: "/images/cha-syu-.jpeg",
   beer: "/images/tenpogaikan.png",
   menu1: "/images/menu1.jpg",
   menu2: "/images/menu2.jpg",
-  menu3: "/images/sio.jpeg",
+  menu3: "/images/sio.jpg",
   menu4: "/images/syouyu.jpg",
-  menu5: "/images/paitan.jpeg",
+  menu5: "/images/paitan.jpg",
   menu6: "/images/tokusio.jpeg",
   noodle: "/images/men.jpeg",
   soup: "/images/siru.jpeg",
