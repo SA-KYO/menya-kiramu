@@ -1379,7 +1379,7 @@ function RecruitSection() {
             whileTap={{ scale: 0.97 }}
           >
             <Mail className="w-5 h-5" />
-            PUSH
+            採用ページを見てみる！
             <ChevronRight className="w-5 h-5" />
           </motion.a>
 
