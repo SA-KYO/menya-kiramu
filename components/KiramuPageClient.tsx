@@ -1055,7 +1055,7 @@ function SignatureGallerySection() {
     {
       badge: "らーめんのお供に",
       tag: "SIGNATURE BOWLS",
-      title: "チャーシュー丼　(500円)",
+      title: "チャーシュー丼　(600円)",
       description:
         "チャーシューを贅沢にのせた一杯。肉の旨味をしっかり感じられるチャーシューに自家製ダレと卵黄が絡み合う、〆にもぴったりのごちそう丼です。",
       note: "02 / 03",
