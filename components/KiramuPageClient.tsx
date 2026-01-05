@@ -1042,37 +1042,34 @@ function SignatureGallerySection() {
 
   const items = [
     {
-      badge: "限定メニュー",
-      tag: "SIGNATURE BOWLS",
-      title: "担々麺　(1,150円)",
+      badge: "平日限定",
+      badgeEn: "LIMITED MENU",
+      title: "醤油つけ麺",
+      price: "1,100円",
       description:
-        "12月の金、土、日限定。スープはきらむ白湯のスープと魚介のダブルスープに担々麺用のタレを入れて香味油にラー油を使います。麺は平打ち麺、トッピングは旨辛ミンチ、肩ロース1枚、チンゲンサイです。",
-      note: "01 / 03",
-      mainImage: IMAGES.gallery[0],
-      accentLabel: "￥1,150",
-      accentText: "担々麺",
+        "香り立つ自家製醤油ダレが決め手。数種の醤油を重ねた奥行きあるつけ汁に、魚介と鶏の旨味を丁寧に合わせ、ひと口目から“醤油の立ち上がり”とコクが広がります。北海道産小麦を使った自家製麺は、つけ汁をしっかり抱える程よいコシと喉ごし。〆はスープ割りで、香りと余韻まで楽しんで。",
+      caption: "数秒ごとに自動でスライドします",
+      mainImage: IMAGES.gallery[2],
+    },
+    {
+      badge: "おすすめ",
+      badgeEn: "RECOMMENDATION",
+      title: "特製塩らーめん",
+      price: "1,400円",
+      description:
+        "澄んだ塩スープに自家製麺が絡む、当店自慢の塩らーめんに贅沢なトッピングをプラス。バラチャーシュー2枚、肩ロース1枚、味玉、海苔2枚が入った特製仕様で、素材の旨みを最大限に味わえる一杯です。",
+      caption: "当店自慢の塩らーめんに贅沢なトッピングをプラス",
+      mainImage: IMAGES.tokusio,
     },
     {
       badge: "らーめんのお供に",
-      tag: "SIGNATURE BOWLS",
-      title: "チャーシュー丼　(600円)",
+      badgeEn: "ACCOMPANIED BY",
+      title: "チャーシュー丼",
+      price: "600円",
       description:
         "チャーシューを贅沢にのせた一杯。肉の旨味をしっかり感じられるチャーシューに自家製ダレと卵黄が絡み合う、〆にもぴったりのごちそう丼です。",
-      note: "02 / 03",
+      caption: "ごちそう丼",
       mainImage: IMAGES.gallery[1],
-      accentLabel: "￥600",
-      accentText: "チャーシュー丼",
-    },
-    {
-      badge: "平日限定",
-      tag: "SIGNATURE BOWLS",
-      title: "醤油つけ麺　(1,100円)",
-      description:
-        "香り立つ自家製醤油ダレが決め手。数種の醤油を重ねた奥行きあるつけ汁に、魚介と鶏の旨味を丁寧に合わせ、ひと口目から\"醤油の立ち上がり\"とコクが広がります。北海道産小麦を使った自家製麺は、つけ汁をしっかり抱える程よいコシと喉ごし。〆はスープ割りで、香りと余韻まで楽しんで。",
-      note: "03 / 03",
-      mainImage: IMAGES.gallery[2],
-      accentLabel: "￥1,100",
-      accentText: "醤油つけ麺",
     },
   ]
 
@@ -1106,114 +1103,108 @@ function SignatureGallerySection() {
   const active = items[index]
 
   return (
-    <section className="py-24 px-4 bg-[#F5F0E8]">
+    <section className="py-24 px-4 bg-[#F8D94B]">
       <div className="max-w-6xl mx-auto">
-        <p className="text-xs md:text-sm text-gray-500 mb-4">
-          スライドで希楽夢の人気メニューがくるくる回る、ラーメンギャラリーです。
-        </p>
-
         <div className="relative">
-          <button
-            onClick={handlePrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
-            aria-label="前へ"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-[#C41E3A]">
-              <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </button>
+          <div className="absolute inset-0 translate-x-3 translate-y-3 bg-black/70 rounded-sm" />
+          <div className="relative bg-white border-4 border-black rounded-sm overflow-hidden shadow-[12px_12px_0_#000]">
+            <div className="absolute -top-4 right-10 w-14 h-14 bg-[#F8D94B] border-4 border-black rotate-6 hidden md:block" />
+            <div className="absolute top-10 -left-6 w-10 h-10 bg-[#F8D94B] border-4 border-black -rotate-6 hidden md:block" />
 
-          <button
-            onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-8 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
-            aria-label="次へ"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-[#C41E3A]">
-              <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </button>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={active.title}
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -40 }}
+                transition={{ duration: 0.45 }}
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={0.2}
+                onDragEnd={(e, { offset, velocity }) => {
+                  if (offset.x > 100 || velocity.x > 500) {
+                    handlePrev()
+                  } else if (offset.x < -100 || velocity.x < -500) {
+                    handleNext()
+                  }
+                }}
+                className="grid md:grid-cols-2 gap-0 cursor-grab active:cursor-grabbing"
+              >
+                <div className="p-8 md:p-12 flex flex-col justify-center gap-6">
+                  <div className="flex items-center gap-3">
+                    <span className="px-3 py-1 bg-black text-white text-xs font-black rounded-sm tracking-wide">
+                      {active.badge}
+                    </span>
+                    <span className="px-3 py-1 bg-[#F8D94B] border-2 border-black text-xs font-black tracking-widest rounded-sm">
+                      {active.badgeEn}
+                    </span>
+                  </div>
 
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={active.title}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.4 }}
-              drag="x"
-              dragConstraints={{ left: 0, right: 0 }}
-              dragElastic={0.2}
-              onDragEnd={(e, { offset, velocity }) => {
-                if (offset.x > 100 || velocity.x > 500) {
-                  handlePrev()
-                } else if (offset.x < -100 || velocity.x < -500) {
-                  handleNext()
-                }
-              }}
-              className="relative bg-white rounded-[32px] shadow-lg px-6 py-8 md:px-10 md:py-10 overflow-hidden cursor-grab active:cursor-grabbing"
-            >
-            <div className="absolute left-6 top-4">
-              <span className="inline-flex items-center px-4 py-1 rounded-full bg-[#FF6F91] text-white text-xs">
-                {active.badge}
-              </span>
-            </div>
+                  <div>
+                    <p className="text-xs text-gray-500 tracking-[0.25em] mb-3 uppercase">SIGNATURE GALLERY</p>
+                    <h3
+                      className="text-4xl md:text-5xl font-black leading-tight text-[#111]"
+                      style={{ fontFamily: "'Noto Serif JP', serif" }}
+                    >
+                      {active.title}{" "}
+                      <span className="text-[#E44757] text-3xl md:text-4xl font-black">（{active.price}）</span>
+                    </h3>
+                  </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-              <div className="flex-1 mt-6 md:mt-0">
-                <p className="text-xs tracking-[.2em] text-gray-400 mb-3 uppercase">{active.tag}</p>
-                <h3
-                  className="text-2xl md:text-3xl font-bold mb-4 leading-snug"
-                  style={{ fontFamily: "'Noto Serif JP', serif" }}
-                >
-                  {active.title}
-                </h3>
-                <p className="text-sm md:text-base leading-relaxed text-gray-600 mb-6">{active.description}</p>
-              </div>
+                  <p className="text-base md:text-lg leading-relaxed text-[#222]">{active.description}</p>
 
-              <div className="relative flex-shrink-0">
-                <div className="w-72 h-72 md:w-96 md:h-96 rounded-2xl bg-[#F5F0E8] flex items-center justify-center shadow-inner">
-                  <div className="w-64 h-64 md:w-[22rem] md:h-[22rem] rounded-xl overflow-hidden border-8 border-[#F5F0E8] shadow-xl">
-                    <img src={active.mainImage} alt={active.title} className="w-full h-full object-cover" />
+                  <div className="flex flex-col gap-2">
+                    <div className="flex items-center gap-4">
+                      <button
+                        onClick={handlePrev}
+                        className="w-11 h-11 flex items-center justify-center rounded-full border-[3px] border-black bg-white hover:-translate-y-0.5 transition-transform shadow-[3px_3px_0_#000]"
+                        aria-label="前へ"
+                      >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-black">
+                          <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </button>
+
+                      <div className="flex items-center gap-3">
+                        {items.map((_, i) => (
+                          <button
+                            key={i}
+                            onClick={() => handleDotClick(i)}
+                            className={`w-3 h-3 rounded-full border-2 border-black transition-colors ${
+                              i === index ? "bg-[#E44757]" : "bg-white"
+                            }`}
+                            aria-label={`slide-${i + 1}`}
+                          />
+                        ))}
+                      </div>
+
+                      <button
+                        onClick={handleNext}
+                        className="w-11 h-11 flex items-center justify-center rounded-full border-[3px] border-black bg-white hover:-translate-y-0.5 transition-transform shadow-[3px_3px_0_#000]"
+                        aria-label="次へ"
+                      >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-black">
+                          <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
+                    <p className="text-sm text-gray-600">{active.caption}</p>
                   </div>
                 </div>
 
-                <div className="absolute -bottom-6 left-1/2 md:left-auto md:-right-6 translate-x-[-50%] md:translate-x-0">
-                  <div className="flex items-center gap-2 md:gap-3 bg-white rounded-full shadow-md px-3 py-1.5">
-                    <div className="w-8 h-8 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center">
-                      <span className="text-lg">🍜</span>
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-[10px] text-[#FF6F91]">{active.accentLabel}</span>
-                      <span className="text-xs font-semibold text-gray-800 whitespace-nowrap">
-                        {active.accentText}
-                      </span>
+                <div className="p-8 md:p-12 bg-[#FFF5C7] flex items-center justify-center relative">
+                  <div className="relative w-full max-w-xl aspect-[4/3]">
+                    <div className="absolute inset-0 translate-x-5 translate-y-5 bg-black rounded-sm" />
+                    <div className="absolute inset-0 translate-x-10 translate-y-10 bg-white border-4 border-black rounded-sm" />
+                    <div className="relative w-full h-full border-[10px] border-white shadow-[12px_12px_0_#000] rounded-sm overflow-hidden">
+                      <img src={active.mainImage} alt={active.title} className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="mt-10 flex items-center justify-between">
-              <span className="text-xs text-gray-400">{active.note}</span>
-              <div className="flex items-center gap-2">
-                {items.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => handleDotClick(i)}
-                    className={`w-2 h-2 rounded-full transition-colors ${
-                      i === index ? "bg-[#C41E3A]" : "bg-gray-300"
-                    }`}
-                    aria-label={`slide-${i + 1}`}
-                  />
-                ))}
-              </div>
-              <span className="text-xs text-gray-400">※数秒ごとに自動でスライドします</span>
-            </div>
-          </motion.div>
-        </AnimatePresence>
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
-
-        <p className="mt-6 text-xs tracking-[.25em] text-gray-500">KIRAMU CLASSIC</p>
       </div>
     </section>
   )
